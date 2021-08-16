@@ -24,12 +24,10 @@
         </div>
         <ul class="menu">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-
     </nav>
-
 
     <div class="container front">
         <img src="images/hamburger.jpg" alt="haburger">
@@ -38,8 +36,7 @@
         </div>
     </div>
 
-
-    <div class="container">
+    <div class="container" id="about">
         <div class="row ">
             <div class="column">
                 <img src="images/tablesetting2.jpg" class="w-100" alt="">
@@ -62,7 +59,7 @@
             <hr />
         </div>
 
-        <div class="row">
+        <div class="row" id="menu">
             <div class="menu-text column">
                 <h2>Our menu</h2>
                 <div class="menu-item padding">
@@ -87,7 +84,6 @@
                 <div class="menu-item padding">
                     <h4>Blueberry Pancakes</h4>
                     <p>With syrup, butter and lots of berries 8.50</p>
-
                 </div>
             </div>
             <div class="column">
@@ -98,7 +94,7 @@
             <hr />
         </div>
     </div>
-    <div class="container">
+    <div class="container " id="contact">
         <h2>Contact</h2>
         <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the
             food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us. </p>
@@ -107,9 +103,8 @@
             <a href="mailto:catering@catering.com">catering@catering.com</a>, or you can send us a
             message
             here:</p>
-
         <form>
-            <input type="text" id="fname" name="fname" value="Name" required><br>
+            <input type="text" id="fname" name="fname" placeholder="Name" required><br>
             <input type="number" id="people" name="people" placeholder="How many people" min="1" max="100" required>
             <input type="datetime-local" id="meeting-time" name="meeting-time" value="datetime-local"
                 min="datetime-local" max="2034-06-14T00:00" required>

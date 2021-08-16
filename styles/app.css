@@ -79,6 +79,11 @@ nav li:hover {
     width: 100%;
 }
 
+.container#about,
+.container#contac {
+    padding-top: 30px;
+}
+
 .text {
     position: absolute;
     bottom: 8px;
