@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'Font Awsome';
+    src: url('../fonts/Font\ Awesome\ 5\ Free-Solid-900.otf');
+}
+
+body {
+    font-family: 'Georama', sans-serif;
+}
+
+nav {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 20px;
+}
+
+nav.ul {
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 10px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+nav a {
+    text-transform: uppercase;
+}
+
+nav li:hover {
+    background: #dbd5c3;
+}
+
+.logo,
+.logo a {
+    line-height: 2;
+    letter-spacing: 62x;
+    position: relative;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.logo:hover {
+    background: #dbd5c3;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+}
+
+.container {
+    /* padding-top: 30px */
+    width: 50%;
+    margin: auto;
+}
+
+.container.front {
+    z-index: 1;
+    width: 100%;
+    position: relative;
+    text-align: center;
+
+}
+
+.container.front img {
+    align-items: center;
+    display: block;
+    width: 100%;
+}
+
+.text {
+    position: absolute;
+    bottom: 8px;
+    left: 15px;
+}
+
+.text h1 {
+    font-size: 4rem;
+    padding: 20px;
+}
+
+.column {
+    width: 50%;
+}
+
+.row {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.row.about-text {
+    text-align: start;
+    padding: 20px;
+    margin: 20px;
+}
+
+.about-text h2 {
+    padding: 20px;
+    line-height: 2;
+    font-size: 2rem;
+    letter-spacing: 10px;
+}
+
+.about-text h3 {
+    padding: 20px;
+    line-height: 0.8rem;
+    font-size: 1rem;
+    letter-spacing: 8px;
+}
+
+.about-text p {
+    padding: 20px;
+    line-height: 2;
+    text-align: left;
+}
+
+p.text-gray {
+    color: gray;
+    padding: 20px;
+}
+
+hr {
+    border: 1px solid #dbd5c3;
+    margin: 40px 0;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.menu-text h2 {
+    text-align: center;
+}
+
+.menu-item {
+    text-align: left;
+}
+
+.padding {
+    padding: 10px;
+    line-height: 2;
+}
+
+.menu-text h2 {
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.menu-item h4 {
+    line-height: 3;
+    font-size: 1.2rem;
+}
+
+.menu-item p {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.color-teal {
+    color: #1db599;
+}
+
+.container h2 {
+    font-size: 2rem;
+    line-height: 2;
+}
+
+.container p {
+    font-size: 1rem;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.menu-text p {
+    margin: 0;
+}
+
+.form {
+    margin-top: 10px;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 20px;
+}
+
+input[type=submit] {
+    width: 35%;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+footer {
+    background: #d8ede9;
+    padding: 30px;
+    text-align: center;
+}
