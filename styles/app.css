@@ -16,8 +16,20 @@ nav {
     padding: 20px;
 }
 
-nav.ul {
-    text-transform: capitalize;
+h2 {
+    line-height: 2;
+    font-size: 2rem;
+    letter-spacing: 5px
+}
+
+h5 {
+    font-size: 2rem;
+    padding-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+nav .ul {
+    text-transform: uppercase;
     display: flex;
     align-items: center;
     list-style-type: none;
@@ -35,28 +47,26 @@ nav a {
     text-transform: uppercase;
 }
 
-nav li:hover {
+nav li:hover,
+.logo:hover {
     background: #dbd5c3;
 }
 
 .logo,
 .logo a {
     line-height: 2;
-    letter-spacing: 62x;
+    letter-spacing: 6px;
     position: relative;
     font-size: 2rem;
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 
-.logo:hover {
-    background: #dbd5c3;
-}
 
 .menu a {
     text-decoration: none;
     font-size: 2rem;
-    color: black;
+    color: #000000;
 }
 
 .container {
@@ -66,36 +76,31 @@ nav li:hover {
 }
 
 .container.front {
-    z-index: 1;
     width: 100%;
     position: relative;
-    text-align: center;
-
 }
 
 .container.front img {
-    align-items: center;
     display: block;
     width: 100%;
 }
 
-.container#about,
-.container#contac {
+.pt-30 {
     padding-top: 30px;
 }
 
-.text {
+.title {
     position: absolute;
     bottom: 8px;
     left: 15px;
 }
 
-.text h1 {
+.title h1 {
     font-size: 4rem;
     padding: 20px;
 }
 
-.column {
+.w-50 {
     width: 50%;
 }
 
@@ -109,13 +114,6 @@ nav li:hover {
     text-align: start;
     padding: 20px;
     margin: 20px;
-}
-
-.about-text h2 {
-    padding: 20px;
-    line-height: 2;
-    font-size: 2rem;
-    letter-spacing: 10px;
 }
 
 .about-text h3 {
@@ -145,9 +143,7 @@ hr {
     width: 100%;
 }
 
-.menu-text h2 {
-    text-align: center;
-}
+
 
 .menu-item {
     text-align: left;
@@ -158,10 +154,6 @@ hr {
     line-height: 2;
 }
 
-.menu-text h2 {
-    font-size: 2rem;
-    padding: 20px;
-}
 
 .menu-item h4 {
     line-height: 3;
@@ -177,10 +169,6 @@ hr {
     color: #1db599;
 }
 
-.container h2 {
-    font-size: 2rem;
-    line-height: 2;
-}
 
 .container p {
     font-size: 1rem;
@@ -212,6 +200,6 @@ input[type=submit] {
 
 footer {
     background: #d8ede9;
-    padding: 30px;
+    padding: 40px;
     text-align: center;
 }
