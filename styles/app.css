@@ -17,7 +17,7 @@ nav {
 }
 
 h2 {
-    line-height: 2;
+
     font-size: 2rem;
     letter-spacing: 5px
 }
@@ -46,7 +46,7 @@ nav li:hover,
 
 .logo,
 .logo a {
-    line-height: 2;
+
     letter-spacing: 6px;
     position: relative;
     font-size: 2rem;
@@ -104,14 +104,13 @@ nav li:hover,
 
 .about-text h3 {
     padding: 20px;
-    line-height: 0.8rem;
     font-size: 1rem;
     letter-spacing: 8px;
 }
 
 .about-text p {
     padding: 20px;
-    line-height: 2;
+
     text-align: left;
 }
 
@@ -137,12 +136,12 @@ hr {
 
 .padding {
     padding: 10px;
-    line-height: 2;
+
 }
 
 
 .menu-item h4 {
-    line-height: 3;
+
     font-size: 1.2rem;
 }
 
@@ -158,7 +157,6 @@ hr {
 
 .container p {
     font-size: 1rem;
-    line-height: 1;
     margin-bottom: 20px;
 }
 
@@ -169,7 +167,8 @@ hr {
 
 input {
     width: 100%;
-    padding: 20px;
+    padding: 25px;
+    margin: 10px;
 }
 
 input[type=submit] {
@@ -182,6 +181,25 @@ input[type=submit] {
     text-decoration: none;
 }
 
+form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 0 25% 25%;
+    align-items: center;
+
+}
+
+input {
+    border: 1px solid black;
+    text-align: center;
+}
+
+input:hover {
+    border: 2px solid black;
+}
+
 footer {
     margin-top: 20px;
     background: #d8ede9;
@@ -191,8 +209,9 @@ footer {
 
 @media (max-width:700px) {
 
-    .s-t-a-c {
+    .sm-text-align-center {
         text-align: center !important;
+        padding: 10px;
     }
 
     .row {
@@ -200,9 +219,17 @@ footer {
         flex-direction: column;
     }
 
+    .logo a {
+        display: block;
+        background: #d8ede9;
+        margin: 30px 5px 30px 5px;
+
+
+    }
+
     .logo {
         font-weight: 600;
-        background: #d8ede9;
+
     }
 
     ul li {
@@ -214,10 +241,6 @@ footer {
         width: auto;
     }
 
-    .l-h-normal {
-        line-height: 1 !important;
-    }
-
     .padding {
         padding: 0;
     }
@@ -226,11 +249,26 @@ footer {
         padding-bottom: 10px;
     }
 
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+
+    }
+
     input {
         text-align: center;
         align-self: center;
         width: 100%;
-        padding: 10px;
-        margin: 10px;
+        padding: 20px;
     }
+
+    input[type=submit] {
+        margin: 0;
+        width: 100px;
+    }
+
 }
