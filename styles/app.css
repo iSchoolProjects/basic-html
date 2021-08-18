@@ -16,12 +16,16 @@ nav {
     padding: 20px;
 }
 
-nav.ul {
-    text-transform: capitalize;
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    text-decoration: none;
+h2 {
+
+    font-size: 2rem;
+    letter-spacing: 5px
+}
+
+h5 {
+    font-size: 2rem;
+    padding-bottom: 10px;
+    letter-spacing: 3px;
 }
 
 nav li {
@@ -35,28 +39,26 @@ nav a {
     text-transform: uppercase;
 }
 
-nav li:hover {
+nav li:hover,
+.logo:hover {
     background: #dbd5c3;
 }
 
 .logo,
 .logo a {
-    line-height: 2;
-    letter-spacing: 62x;
+
+    letter-spacing: 6px;
     position: relative;
     font-size: 2rem;
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 
-.logo:hover {
-    background: #dbd5c3;
-}
 
 .menu a {
     text-decoration: none;
     font-size: 2rem;
-    color: black;
+    color: #000000;
 }
 
 .container {
@@ -66,31 +68,31 @@ nav li:hover {
 }
 
 .container.front {
-    z-index: 1;
     width: 100%;
     position: relative;
-    text-align: center;
-
 }
 
 .container.front img {
-    align-items: center;
     display: block;
     width: 100%;
 }
 
-.text {
+.pt-30 {
+    padding-top: 30px;
+}
+
+.title {
     position: absolute;
     bottom: 8px;
     left: 15px;
 }
 
-.text h1 {
+.title h1 {
     font-size: 4rem;
     padding: 20px;
 }
 
-.column {
+.w-50 {
     width: 50%;
 }
 
@@ -100,29 +102,15 @@ nav li:hover {
     justify-content: center;
 }
 
-.row.about-text {
-    text-align: start;
-    padding: 20px;
-    margin: 20px;
-}
-
-.about-text h2 {
-    padding: 20px;
-    line-height: 2;
-    font-size: 2rem;
-    letter-spacing: 10px;
-}
-
 .about-text h3 {
     padding: 20px;
-    line-height: 0.8rem;
     font-size: 1rem;
     letter-spacing: 8px;
 }
 
 .about-text p {
     padding: 20px;
-    line-height: 2;
+
     text-align: left;
 }
 
@@ -140,9 +128,7 @@ hr {
     width: 100%;
 }
 
-.menu-text h2 {
-    text-align: center;
-}
+
 
 .menu-item {
     text-align: left;
@@ -150,16 +136,12 @@ hr {
 
 .padding {
     padding: 10px;
-    line-height: 2;
+
 }
 
-.menu-text h2 {
-    font-size: 2rem;
-    padding: 20px;
-}
 
 .menu-item h4 {
-    line-height: 3;
+
     font-size: 1.2rem;
 }
 
@@ -172,14 +154,9 @@ hr {
     color: #1db599;
 }
 
-.container h2 {
-    font-size: 2rem;
-    line-height: 2;
-}
 
 .container p {
     font-size: 1rem;
-    line-height: 1;
     margin-bottom: 20px;
 }
 
@@ -187,26 +164,111 @@ hr {
     margin: 0;
 }
 
-.form {
-    margin-top: 10px;
-    width: 100%;
-}
 
 input {
     width: 100%;
-    padding: 20px;
+    padding: 25px;
+    margin: 10px;
 }
 
 input[type=submit] {
+    margin: 20px 20px 0 0;
     width: 35%;
 }
+
 
 .container a {
     text-decoration: none;
 }
 
-footer {
-    background: #d8ede9;
-    padding: 30px;
+form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 0 25% 25%;
+    align-items: center;
+
+}
+
+input {
+    border: 1px solid black;
     text-align: center;
+}
+
+input:hover {
+    border: 2px solid black;
+}
+
+footer {
+    margin-top: 20px;
+    background: #d8ede9;
+    padding: 40px;
+    text-align: center;
+}
+
+@media (max-width:700px) {
+
+    .sm-text-align-center {
+        text-align: center !important;
+        padding: 10px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo a {
+        display: block;
+        background: #d8ede9;
+        margin: 30px 5px 30px 5px;
+
+
+    }
+
+    .logo {
+        font-weight: 600;
+
+    }
+
+    ul li {
+        font-weight: 300;
+        border: 4px solid #d8ede9;
+    }
+
+    .w-50 {
+        width: auto;
+    }
+
+    .padding {
+        padding: 0;
+    }
+
+    .padding:last-child {
+        padding-bottom: 10px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+
+    }
+
+    input {
+        text-align: center;
+        align-self: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+    input[type=submit] {
+        margin: 0;
+        width: 100px;
+    }
+
 }
